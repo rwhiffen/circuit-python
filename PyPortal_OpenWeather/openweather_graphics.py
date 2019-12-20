@@ -70,7 +70,7 @@ class OpenWeather_Graphics(displayio.Group):
         city_name =  weather['name'] + ", " + weather['sys']['country']
         print(city_name)
         if not self.city_text:
-            self.city_text = Label(self.medium_font, text=city_name)
+            self.city_text = Label(self.small_font, text=city_name)
             self.city_text.x = 10
             self.city_text.y = 12
             self.city_text.color = 0xFFFFFF

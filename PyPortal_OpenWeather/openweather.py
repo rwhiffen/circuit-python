@@ -20,7 +20,7 @@ except ImportError:
 
 # Use cityname, country code where countrycode is ISO3166 format.
 # E.g. "New York, US" or "London, GB"
-LOCATION = "Manhattan, US"
+LOCATION = "Arlington County, US"
 
 # Set up where we'll be fetching data from
 DATA_SOURCE = "http://api.openweathermap.org/data/2.5/weather?q="+LOCATION
@@ -51,8 +51,8 @@ while True:
             print("Some error occured, retrying! -", e)
             continue
 
-    # only query the weather every 10 minutes (and on first run)
-    if (not weather_refresh) or (time.monotonic() - weather_refresh) > 600:
+    # only query the weather every 15 minutes (and on first run)
+    if (not weather_refresh) or (time.monotonic() - weather_refresh) > 900:
         try:
             value = pyportal.fetch()
             print("Response is", value)
