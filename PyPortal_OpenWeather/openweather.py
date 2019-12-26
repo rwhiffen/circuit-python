@@ -40,6 +40,8 @@ gfx = openweather_graphics.OpenWeather_Graphics(pyportal.splash, am_pm=True, cel
 
 localtile_refresh = None
 weather_refresh = None
+blank_screen = None
+
 while True:
     # only query the online time once per hour (and on first run)
     if (not localtile_refresh) or (time.monotonic() - localtile_refresh) > 3600:
@@ -61,6 +63,17 @@ while True:
         except RuntimeError as e:
             print("Some error occured, retrying! -", e)
             continue
+    # check if we should blank the screen  and stub in brightnes=0
+    # don't actually do anything yet.
+    if ( blank_screen)
+        try:
+            #display.brightness = 0
+            blank_screen = None
+            # we believe we've set it, set to None to no longer execute this if
+        except RuntimeError as e:
+            print("could not blank the screen",e)
+            continue
+
 
     gfx.update_time()
     time.sleep(30)  # wait 30 seconds before updating anything again
