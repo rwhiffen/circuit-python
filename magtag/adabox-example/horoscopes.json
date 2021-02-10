@@ -1,0 +1,446 @@
+[
+  {
+    "sign": "Capricorn",
+    "text": "Unleaded solder is hard to work with, raise the temperature"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "Less heat leads to less power"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "Layout is not as important as position"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "Keep noise away from those that are sensitive"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "There is a finite lifespan before performance degrades"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "Violating ratings for even a millisecond can destroy"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "Resistance increases with temperature and can lead to heat"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "Certain frequencies can only be blocked in specific ways"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "Not every container is static free"
+  },
+  {
+    "sign": "Capricorn",
+    "text": "The further the distance, the less power"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "A helping hand will save you a lot of time, for PCBs too"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "Burnout does not happen at the limit, it's much later"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "Resistance can also mean induction"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "Make your own libraries or be stuck with someone else's"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "Confidence is publishing capabilities"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "Some planes of existence are overlapping and short"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "The way something sounds is not the same as it's power"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "Switching up things can bring them to ground level"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "You've got the power, as long as it doesn't go off the rails"
+  },
+  {
+    "sign": "Aquarius",
+    "text": "If something is not working, replace with identical parts"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Break it down to small projects, then assemble as a whole"
+  },
+  {
+    "sign": "Pisces",
+    "text": "How fast something fast can oscillate, is limited"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Find the source of the sinking feeling and don't accept it"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Write like everyone is reading"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Instead of dividing things, shift them, watch them multiply"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Filtering out noise is the start, not the end"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Avoiding errors will help you stay disciplined"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Things in the clockwise motion, increase"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Meaningful gains can turn in to multiplied gains"
+  },
+  {
+    "sign": "Pisces",
+    "text": "Just because there is a gate, does not mean it's locked"
+  },
+  {
+    "sign": "Aries",
+    "text": "Plots can be revealed in high resolution settings"
+  },
+  {
+    "sign": "Taurus",
+    "text": "Serial confusion is often about the connections, check them"
+  },
+  {
+    "sign": "Taurus",
+    "text": "If the spectrum is crowded, move to another"
+  },
+  {
+    "sign": "Taurus",
+    "text": "Higher isn't always better, range matters"
+  },
+  {
+    "sign": "Taurus",
+    "text": "Motion is noise, stay still when possible"
+  },
+  {
+    "sign": "Taurus",
+    "text": "There is more to transforming than meets the eye"
+  },
+  {
+    "sign": "Taurus",
+    "text": "There are usually good reasons to find common ground"
+  },
+  {
+    "sign": "Taurus",
+    "text": "When something is free, it usually requires more work"
+  },
+  {
+    "sign": "Taurus",
+    "text": "Spend more time calculating than backtracking"
+  },
+  {
+    "sign": "Taurus",
+    "text": "Sharing power reduces the load"
+  },
+  {
+    "sign": "Taurus",
+    "text": "Make a megaphone to whisper into"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Don't confuse testing statements with evaluating equality"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Sensitive? Stick with linear power"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Misinformation is more dangerous than no information"
+  },
+  {
+    "sign": "Gemini",
+    "text": "A good pair of goggles wil protect clarity of vision"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Never get lazy with decoupling"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Design things to be tested, and test things for designs"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Something in hand to test is better than waiting for perfect"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Logic can be the cheapest thing or the most expensive thing"
+  },
+  {
+    "sign": "Gemini",
+    "text": "Unshielded is cheap, but stray fields can interfere"
+  },
+  {
+    "sign": "Gemini",
+    "text": "The free sample has strings attached"
+  },
+  {
+    "sign": "Cancer",
+    "text": "Staying powered for years requires the right battery"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Figure out power you actually need to maximize efficiency"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Use great caution with things at the end of their lifespan"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Communicating in one direction is not communicating"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Two ways forward is not the same as two ways back"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Inadequate signal will result in the need for transformation"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Good leadership today will inspire more tomorrow"
+  },
+ {
+    "sign": "Cancer",
+    "text": "It's always a trade-off with cost and features"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Limitations should be viewed as creative constraints"
+  },
+ {
+    "sign": "Cancer",
+    "text": "Amplifiers oscillate, filters are your friend"
+  },
+  {
+    "sign": "Leo",
+    "text": "Maximizing life require closeness and being room temperature"
+  },
+  {
+    "sign": "Leo",
+    "text": "There is no such thing as flawless overload protection"
+  },
+  {
+    "sign": "Leo",
+    "text": "A large surface area will help keep you cool"
+  },
+  {
+    "sign": "Leo",
+    "text": "Footprints are not always reliable, make your own"
+  },
+  {
+    "sign": "Leo",
+    "text": "Design for inevitable contact failure"
+  },
+  {
+    "sign": "Leo",
+    "text": "Use simulations to try things out before deploying for real"
+  },
+  {
+    "sign": "Leo",
+    "text": "Detailed insights are better than assume facts"
+  },
+  {
+    "sign": "Leo",
+    "text": "Sometimes building a mistake is better than not building"
+  },
+  {
+    "sign": "Leo",
+    "text": "Being completely recharged does not mean full capacity"
+  },
+  {
+    "sign": "Leo",
+    "text": "A stable base to build upon sometimes is upside down"
+  },
+  {
+    "sign": "Virgo",
+    "text": "Cold reveals contraction and expansion, use it wisely"
+  },
+ {
+    "sign": "Virgo",
+    "text": "Asking is one of the ways to receive"
+  },
+ {
+    "sign": "Virgo",
+    "text": "Sometimes adding more to something builds bridges"
+  },
+ {
+    "sign": "Virgo",
+    "text": "Tactile confusion can be useful today"
+  },
+ {
+    "sign": "Virgo",
+    "text": "The longer the lead, the more positive it is"
+  },
+ {
+    "sign": "Virgo",
+    "text": "The side way is sometimes better than the point"
+  },
+ {
+    "sign": "Virgo",
+    "text": "The maximum of anything is not perfect"
+  },
+ {
+    "sign": "Virgo",
+    "text": "Frequent performances are good practice, but not forever"
+  },
+ {
+    "sign": "Virgo",
+    "text": "Collect filters, there is more noise than ever"
+  },
+ {
+    "sign": "Virgo",
+    "text": "You are what you amplify"
+  },
+  {
+    "sign": "Libra",
+    "text": "Something unsigned can only hold so many values"
+  },
+  {
+    "sign": "Libra",
+    "text": "The time is always right to do something creative"
+  },
+  {
+    "sign": "Libra",
+    "text": "Find it, build it, buying it is a last resort"
+  },
+  {
+    "sign": "Libra",
+    "text": "Empowering someone else will make you more powerful"
+  },
+  {
+    "sign": "Libra",
+    "text": "Sometimes it's not going to change, unless you do"
+  },
+  {
+    "sign": "Libra",
+    "text": "Get it done and optimize later"
+  },
+  {
+    "sign": "Libra",
+    "text": "Implementing ideas is more important than new ideas today"
+  },
+  {
+    "sign": "Libra",
+    "text": "Making something simple is the most advanced thing to do"
+  },
+  {
+    "sign": "Libra",
+    "text": "Even if the prediction is right, you still gotta do the work"
+  },
+  {
+    "sign": "Libra",
+    "text": "Stepping on toes can be avoided by standing on shoulders"
+  },
+  {
+    "sign": "Scorpio",
+    "text": "Current limits start out best with a higher power"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "Making tools is sometimes better than making a finished good"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "Showing up on time is just as important as arriving prepared"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "Start something new to get back in the beginner mind"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "Making a decision fast is better than no decision at all"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "Get two copies of your favorite book, give one away"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "One strategy to fight impossible odds is to use them"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "Long term, uplifting stories work out better"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "It's more important to notice what needs to be done"
+  },
+ {
+    "sign": "Scorpio",
+    "text": "Something is waiting to be discovered by someone today"
+  },
+  {
+    "sign": "Sagittarius",
+    "text": "A good gauge can also be a bind"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "It's possible to move quickly, but not in a hurry"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "The best listeners hear the best things"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "When things are easy, prepare for the hard things"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "Make changes to work hard, which leads to chances"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "The process is more important than the end result of goals"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "Share one thing today, then one more tomorrow"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "Document something, then help someone document something"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "The power to change is not the same as the power to charge"
+  },
+ {
+    "sign": "Sagittarius",
+    "text": "Today, why is more important than what"
+  }
+]
