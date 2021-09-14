@@ -15,7 +15,7 @@ import adafruit_lis3dh
 # CUSTOMIZE YOUR COLOR HERE:
 # (red, green, blue) -- each 0 (off) to 255 (brightest)
 # COLOR = (255, 0, 0)  # red
-COLOR = (255, 0, 0)  # purple
+COLOR = (100, 0, 255)  # purple
 # COLOR = (0, 100, 255) #cyan
 
 # CUSTOMIZE SENSITIVITY HERE: smaller numbers = more sensitive to motion
