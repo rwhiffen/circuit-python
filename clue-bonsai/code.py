@@ -28,7 +28,7 @@ def read_and_average(analog_in, times, wait):
         time.sleep(wait)
     return analog_sum / times
 
-clue_display = clue.simple_text_display(title=" CLUE Plant", title_scale=1, text_scale=3)
+clue_display = clue.simple_text_display(title=" XMAS Water", title_scale=1, text_scale=3)
 clue_display.show()
 
 while True:
@@ -37,7 +37,7 @@ while True:
     # Calculate a percentage (analog_value ranges from 0 to 65535)
     percentage = analog_value / 65535 * 100
     # Display the percentage
-    clue_display[0].text = "Soil: {} %".format(int(percentage))
+    clue_display[0].text = "Water: {} %".format(int(percentage))
     # Print the values to the serial console
     print((analog_value, percentage))
 
@@ -45,7 +45,7 @@ while True:
         motor.value = True
         clue_display[1].text = "Motor ON"
         clue_display[1].color = (0, 255, 0)
-        time.sleep(0.5)
+        time.sleep(1.5)
 
     # always turn off quickly
     motor.value = False
