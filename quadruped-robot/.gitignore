@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# ignore pycharm dir and DS_Store
+.idea/
+.DS_Store
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Don't upload secrets
+secrets.py
+
+# ignore the binary files for boards
+*.uf2
