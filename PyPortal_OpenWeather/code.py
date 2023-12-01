@@ -10,6 +10,7 @@ if you can find something that spits out JSON data, we can display it
 import sys
 import time
 import board
+from digitalio import DigitalInOut, Direction, Pull
 from adafruit_pyportal import PyPortal
 cwd = ("/"+__file__).rsplit('/', 1)[0] # the current working directory (where this file is)
 sys.path.append(cwd)
@@ -40,6 +41,18 @@ pyportal = PyPortal(url=DATA_SOURCE,
                     status_neopixel=board.NEOPIXEL,
                     default_bg=0x000000)
 
+#  setting up the hardware snooze/dismiss buttons
+switch_dark = DigitalInOut(board.D3)
+switch_dark.direction = Direction.INPUT
+switch_dark.pull = Pull.UP
+
+switch_light = DigitalInOut(board.D4)
+switch_light.direction = Direction.INPUT
+switch_light.pull = Pull.UP
+
+#the backlight should start on
+light_on = True
+
 gfx = openweather_graphics.OpenWeather_Graphics(pyportal.splash, am_pm=True, celsius=False)
 
 localtile_refresh = None
@@ -65,6 +78,15 @@ while True:
         except RuntimeError as e:
             print("Some error occured, retrying! -", e)
             continue
+    if light_on==False and (not switch_light.value): #light_on=false and button press
+        #pyportal.set_backlight(1)
+        print("turing light on\n")
+        light_on= True # set it to trun now
+    if light_on==True and (not switch_dark.value): #light_on=True and button press
+        #pyportal.set_backlight(0)
+        print("turing light off\n")
+        light_on= False #
+
 
     gfx.update_time()
     time.sleep(30)  # wait 30 seconds before updating anything again
