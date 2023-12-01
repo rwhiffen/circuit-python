@@ -71,7 +71,7 @@ class OpenWeather_Graphics(displayio.Group):
         weather_icon = weather['weather'][0]['icon']
         self.set_icon(cwd+"/icons/"+weather_icon+".bmp")
 
-        city_name =  weather['name'] + ", " + weather['sys']['country']
+        city_name =  weather['name'] # shortening this ->+ ", " + weather['sys']['country']
         print(city_name)
         if not self.city_text:
             self.city_text = Label(self.medium_font, text=city_name)
