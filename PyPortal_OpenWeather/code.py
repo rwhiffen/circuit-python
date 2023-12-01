@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2019 Limor Fried for Adafruit Industries
+#
+# SPDX-License-Identifier: MIT
+
 """
 This example queries the Open Weather Maps site API to find out the current
 weather for your location... and display it on a screen!
@@ -20,7 +24,7 @@ except ImportError:
 
 # Use cityname, country code where countrycode is ISO3166 format.
 # E.g. "New York, US" or "London, GB"
-LOCATION = "Arlington County, US"
+LOCATION = "Manhattan, US"
 
 # Set up where we'll be fetching data from
 DATA_SOURCE = "http://api.openweathermap.org/data/2.5/weather?q="+LOCATION
@@ -40,8 +44,6 @@ gfx = openweather_graphics.OpenWeather_Graphics(pyportal.splash, am_pm=True, cel
 
 localtile_refresh = None
 weather_refresh = None
-blank_screen = None
-
 while True:
     # only query the online time once per hour (and on first run)
     if (not localtile_refresh) or (time.monotonic() - localtile_refresh) > 3600:
@@ -53,8 +55,8 @@ while True:
             print("Some error occured, retrying! -", e)
             continue
 
-    # only query the weather every 15 minutes (and on first run)
-    if (not weather_refresh) or (time.monotonic() - weather_refresh) > 900:
+    # only query the weather every 10 minutes (and on first run)
+    if (not weather_refresh) or (time.monotonic() - weather_refresh) > 600:
         try:
             value = pyportal.fetch()
             print("Response is", value)
@@ -63,17 +65,6 @@ while True:
         except RuntimeError as e:
             print("Some error occured, retrying! -", e)
             continue
-    # check if we should blank the screen  and stub in brightnes=0
-    # don't actually do anything yet.
-    if ( blank_screen)
-        try:
-            #display.brightness = 0
-            blank_screen = None
-            # we believe we've set it, set to None to no longer execute this if
-        except RuntimeError as e:
-            print("could not blank the screen",e)
-            continue
-
 
     gfx.update_time()
     time.sleep(30)  # wait 30 seconds before updating anything again
