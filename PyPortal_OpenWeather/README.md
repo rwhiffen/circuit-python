@@ -29,3 +29,6 @@ the light always on.
 7/12/2020 work notes - getting arduino and git set up on my new laptop.  The
 whole USB-C connector thing is harshing my mello.  I hate that I have to buy
 all new stuff to go with the laptop.  Oh well.
+
+
+12/1/2023 work notes - after seeing the version of this for the [Adafruit PyPortal Titano](https://www.adafruit.com/product/4444) I copied the idea from the titano implementation that has [STEMMA Wired Tactile Push-Buttons](https://www.adafruit.com/product/4431) to do fancy stuff.  I that idea to pyportal.set_backlight(0) to shut off the light (and 1 to turn back on)

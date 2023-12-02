@@ -1,6 +1,10 @@
 # SPDX-FileCopyrightText: 2019 Limor Fried for Adafruit Industries
 #
 # SPDX-License-Identifier: MIT
+# 
+
+# mod by Rich Whiffen - 12/1/2023
+#
 
 """
 This example queries the Open Weather Maps site API to find out the current
@@ -32,7 +36,7 @@ DATA_SOURCE = "http://api.openweathermap.org/data/2.5/weather?q="+LOCATION
 DATA_SOURCE += "&appid="+secrets['openweather_token']
 # You'll need to get a token from openweather.org, looks like 'b6907d289e10d714a6e88b30761fae22'
 DATA_LOCATION = []
-
+time_counter=0
 
 # Initialize the pyportal object and let us know what data to fetch and where
 # to display it
@@ -79,14 +83,17 @@ while True:
             print("Some error occured, retrying! -", e)
             continue
     if light_on==False and (not switch_light.value): #light_on=false and button press
-        #pyportal.set_backlight(1)
+        pyportal.set_backlight(1)
         print("turing light on\n")
         light_on= True # set it to trun now
     if light_on==True and (not switch_dark.value): #light_on=True and button press
-        #pyportal.set_backlight(0)
+        pyportal.set_backlight(0)
         print("turing light off\n")
         light_on= False #
 
+    if time_counter>59: #rough estimate for a minute having passed
+        time_counter=0 # reset for next loop
+        gfx.update_time() # update clock
 
-    gfx.update_time()
-    time.sleep(30)  # wait 30 seconds before updating anything again
+    time.sleep(1)  # wait 30 seconds before updating anything again
+    time_counter+=1 #incremenet time_counter to know if we should update clock next loop

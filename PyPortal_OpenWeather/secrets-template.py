@@ -5,6 +5,9 @@ secrets = {
     'ssid' : 'home ssid',
     'password' : 'my password',
     'timezone' : "America/New_York", # http://worldtimeapi.org/timezones
-    'github_token' : 'fawfj23rakjnfawiefa',
+    'github_token' : '123123123123',
     'hackaday_token' : 'h4xx0rs3kret',
+    'location' : "Arlington County, US",
+    'aio_username' : 'xxxx',
+    'aio_key' : '123456789',
     }
