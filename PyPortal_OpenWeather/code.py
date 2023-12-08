@@ -14,8 +14,11 @@ if you can find something that spits out JSON data, we can display it
 import sys
 import time
 import board
+import busio
+import adafruit_adt7410
 from digitalio import DigitalInOut, Direction, Pull
 from adafruit_pyportal import PyPortal
+
 cwd = ("/"+__file__).rsplit('/', 1)[0] # the current working directory (where this file is)
 sys.path.append(cwd)
 import openweather_graphics  # pylint: disable=wrong-import-position
@@ -45,6 +48,12 @@ pyportal = PyPortal(url=DATA_SOURCE,
                     status_neopixel=board.NEOPIXEL,
                     default_bg=0x000000)
 
+# intialize the pyportal  adt7410
+i2c_bus = busio.I2C(board.SCL, board.SDA)
+adt = adafruit_adt7410.ADT7410(i2c_bus, address=0x48)
+adt.high_resolution = True
+room_temperature = 50 # start with an above zero temp
+
 #  setting up the hardware snooze/dismiss buttons
 switch_dark = DigitalInOut(board.D3)
 switch_dark.direction = Direction.INPUT
@@ -73,12 +82,16 @@ while True:
             continue
 
     # only query the weather every 10 minutes (and on first run)
+    # adding temp sensor to this part
     if (not weather_refresh) or (time.monotonic() - weather_refresh) > 600:
         try:
             value = pyportal.fetch()
             print("Response is", value)
             gfx.display_weather(value)
             weather_refresh = time.monotonic()
+            # read the temperature sensor
+            room_temperature = adt.temperature
+            print("room temp is ", room_temperature)
         except RuntimeError as e:
             print("Some error occured, retrying! -", e)
             continue

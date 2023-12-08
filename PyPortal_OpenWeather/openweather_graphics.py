@@ -46,6 +46,12 @@ class OpenWeather_Graphics(displayio.Group):
         self.time_text.color = 0xFFFFFF
         self._text_group.append(self.time_text)
 
+        self.roomtemp_text = Label(self.medium_font)
+        self.roomtemp_text.x = 150
+        self.roomtemp_text.y = 12
+        self.roomtemp_text.color = 0xFFFFFF
+        self._text_group.append(self.roomtemp_text)
+
         self.temp_text = Label(self.large_font)
         self.temp_text.x = 200
         self.temp_text.y = 195
