@@ -12,6 +12,7 @@
 # bought the parts yet) but am so enamored with the idea I had to start
 #
 # 2/23/24 - just copying the code from Adafruit
+# 3/8/24 - tweaking things to try and get the display to work
 
 
 import time
