@@ -24,7 +24,7 @@ import ulab.numpy as np
 import adafruit_pycamera
 
 pycam = adafruit_pycamera.PyCamera()
-# pycam.live_preview_mode()
+pycam.live_preview_mode()
 
 settings = (
     None,
