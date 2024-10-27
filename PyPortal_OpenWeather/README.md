@@ -32,3 +32,8 @@ all new stuff to go with the laptop.  Oh well.
 
 
 12/1/2023 work notes - after seeing the version of this for the [Adafruit PyPortal Titano](https://www.adafruit.com/product/4444) I copied the idea from the titano implementation that has [STEMMA Wired Tactile Push-Buttons](https://www.adafruit.com/product/4431) to do fancy stuff.  I that idea to pyportal.set_backlight(0) to shut off the light (and 1 to turn back on)
+
+10/27/2024 - was working on the 3.0 weather API change in the code and realized 2 things
+first - I didn't need to rev the /forcast/ API, only /onecall/ - so reverted that
+second - I half finished the local temperature code - it doesn't work so this code is undeployable "as is" - commit 2cd65f4 is where it starts, but I never finished
+¯\_(ツ)_/¯
