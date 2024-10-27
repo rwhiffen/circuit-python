@@ -1,3 +1,6 @@
+#
+# tweaked to add 3.0 API call oct-2024
+#
 import time
 import terminalio
 import displayio
@@ -51,7 +54,7 @@ icons_small_bmp, icons_small_pal = adafruit_imageload.load(ICONS_SMALL_FILE)
 def get_data_source_url(api="onecall", location=None):
     """Build and return the URL for the OpenWeather API."""
     if api.upper() == "FORECAST5":
-        URL = "https://api.openweathermap.org/data/3.0/forecast?"
+        URL = "https://api.openweathermap.org/data/2.5/forecast?"
         URL += "q=" + location
     elif api.upper() == "ONECALL":
         URL = "https://api.openweathermap.org/data/3.0/onecall?exclude=minutely,hourly,alerts"
