@@ -4,6 +4,7 @@
 # 
 
 # mod by Rich Whiffen - 12/1/2023
+# mod by Rich Whiffen - 10/27/2024 - 3.0 version of API call
 #
 
 """
